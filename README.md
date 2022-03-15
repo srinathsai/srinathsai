@@ -2,7 +2,7 @@ Hi there 👋
 <img width="35%" align="right" alt="Github" src="https://user-images.githubusercontent.com/48678280/88862734-4903af80-d201-11ea-968b-9c939d88a37c.gif" />
 
 - 🔭 I’m  pursuing Masters in Computer science from Oklahoma state university.
-- 🌱 I’m currently learning Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management.
+- 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management.
 - 👯 I’m open for opportunities as Software developer intern.
 - 📫 How to reach me: 
 
