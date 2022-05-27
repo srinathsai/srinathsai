@@ -1,6 +1,6 @@
 Hi there 👋
 - 🔭 I’m  pursuing Masters in Computer science from Oklahoma state university.
-- 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management,Software Engineering and Statistics for experimenters II<br />
+- 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management, Software Engineering and Statistics for experimenters II<br />
 - 👯 I’m open for opportunities in Software developer fulltime.<br />
 - 📫 How to reach me: 
    
