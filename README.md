@@ -1,3 +1,4 @@
+https://user-images.githubusercontent.com/45191452/182707198-cb97826c-e5f8-4a6b-a77f-a112997014c2.mp4
 Hi there 👋
 - 🔭 I’m  pursuing Masters in Computer science from Oklahoma state university.
 - 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management, Software Engineering and Statistics for experimenters II<br />
@@ -8,4 +9,8 @@ Hi there 👋
    
    ![Srinath's github stats](https://github-readme-stats.vercel.app/api?username=srinathsai&show_icons=true&theme=dark)
  
+
+
+
+
 
