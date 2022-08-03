@@ -1,6 +1,7 @@
-https://user-images.githubusercontent.com/45191452/182707198-cb97826c-e5f8-4a6b-a77f-a112997014c2.mp4
-Hi there 👋
-- 🔭 I’m  pursuing Masters in Computer science from Oklahoma state university.
+
+
+https://user-images.githubusercontent.com/45191452/182707442-7056bf98-2b7c-43ed-9418-d49ede93214b.mp
+
 - 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management, Software Engineering and Statistics for experimenters II<br />
 - 👯 I’m open for opportunities in Software developer fulltime.<br />
 - 📫 How to reach me: 
@@ -8,9 +9,3 @@ Hi there 👋
    [![Linkedin Badge](https://img.shields.io/badge/-Srinath_sai_Tripuraneni-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/srinath-sai-tripuraneni-b7b2511b3/)](https://www.linkedin.com/in/srinath-sai-tripuraneni-b7b2511b3/) [![Gmail Badge](https://img.shields.io/badge/-srinathtripuraneni@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:srinathtripuraneni@gmail.com)](mailto:srinathtripuraneni@gmail.com)
    
    ![Srinath's github stats](https://github-readme-stats.vercel.app/api?username=srinathsai&show_icons=true&theme=dark)
- 
-
-
-
-
-
