@@ -2,7 +2,7 @@
 
 https://user-images.githubusercontent.com/45191452/182707442-7056bf98-2b7c-43ed-9418-d49ede93214b.mp
 
-- 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management, Software Engineering and Statistics for experimenters II<br />
+- 🌱 My courseworks are:- Data Structures, Operating systems 2, Computer Architecture and Organization, Big Data Management, Software Engineering and Statistics for experimenters II, Big data analytics, Machine learning, Formal Language Theory and Principles of Database<br />
 - 👯 I’m open for opportunities in Software developer fulltime.<br />
 - 📫 How to reach me: 
    
