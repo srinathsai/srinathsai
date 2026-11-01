@@ -1,0 +1,95 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily, ~1 AM Central
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/readme-stats.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # STATS_TOKEN = your PAT (repo + read:user) so private work is counted.
+      # Falls back to GITHUB_TOKEN (public data only) until that secret exists.
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true
+          path: dist/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&hide_border=true&theme=github_dark
+          path: dist/stats-dark.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true
+          path: dist/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=github_dark
+          path: dist/top-langs-dark.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Streak (light)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true
+          path: dist/streak.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Streak (dark)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&theme=dark&background=0D1117
+          path: dist/streak-dark.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      # Cards live on a separate "output" branch so main doesn't get a commit every day.
+      - name: Publish cards to the output branch
+        run: |
+          mkdir -p "$RUNNER_TEMP/cards"
+          cp dist/*.svg "$RUNNER_TEMP/cards/"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan output
+          cp "$RUNNER_TEMP"/cards/*.svg .
+          git add *.svg
+          git commit -m "Update profile cards"
+          git push --force origin output
