@@ -10,4 +10,25 @@ https://user-images.githubusercontent.com/45191452/182707442-7056bf98-2b7c-43ed-
 
 
    
-   ![Srinath's github stats](https://github-readme-stats-eight-theta.vercel.app/api?username=srinathsai)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/srinathsai/srinathsai/output/stats-dark.svg" />
+    <img alt="Srinath's GitHub stats" src="https://raw.githubusercontent.com/srinathsai/srinathsai/output/stats.svg" height="165" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/srinathsai/srinathsai/output/top-langs-dark.svg" />
+    <img alt="Top languages" src="https://raw.githubusercontent.com/srinathsai/srinathsai/output/top-langs.svg" height="165" />
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/srinathsai/srinathsai/output/streak-dark.svg" />
+    <img alt="GitHub streak" src="https://raw.githubusercontent.com/srinathsai/srinathsai/output/streak.svg" height="165" />
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/srinathsai/srinathsai/output/snake-dark.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/srinathsai/srinathsai/output/snake.svg" />
+  </picture>
+</p>
